@@ -1,8 +1,9 @@
 #ifndef LISTV2_H
 #define LISTV2_H
 #include <iostream>
-struct Node
+class Node
 {
+public:
     std::string data;
     Node *next;
     Node *prev;
@@ -11,6 +12,7 @@ struct Node
         next=nullptr;
         prev=nullptr;
     }
+
 };
 
 

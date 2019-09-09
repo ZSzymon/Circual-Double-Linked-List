@@ -7,6 +7,7 @@ using namespace std;
 void pushFrontTest()
 {
     ListV2 *myListV2 = new ListV2();
+
     myListV2->printList();
     myListV2->pushFront("Jan Nowak");
     myListV2->pushFront("Marcin Kowalski");
@@ -27,7 +28,9 @@ void pushBackTest()
 {
     ListV2 *myListV2 = new ListV2();
     myListV2->printList();
+
     myListV2->pushBack("Jan Nowak");
+
     myListV2->pushBack("Marcin Kowalski");
     myListV2->pushBack("Anna Zielinska");
     myListV2->pushBack("Izabela Wozniak");
@@ -37,16 +40,18 @@ void pushBackTest()
     cout<<"Head Adress in function:: "<<myListV2->head<<endl;
     cout<<"Tail ADress in function:: "<<myListV2->tail<<endl;
 
-
     myListV2->printList();
-    delete  myListV2;
+
+    delete myListV2;
+
 }
 int main()
 {
     std::ios_base::sync_with_stdio(0);
 
-    //pushBackTest();
-    pushFrontTest();
+
+   // pushFrontTest();
+    pushBackTest();
 
 
 

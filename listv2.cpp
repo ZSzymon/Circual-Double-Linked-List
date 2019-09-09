@@ -9,13 +9,14 @@ ListV2::ListV2()
 
 ListV2::~ListV2()
 {
-    Node *current = head;
+
     Node *nextNode;
-    while(current->next)
+
+    while(head)
     {
-        nextNode = current->next;
-        delete current;
-        current = nextNode;
+        nextNode = head;
+        head = head->next;
+        delete nextNode;
     }
 
 }
@@ -104,6 +105,6 @@ void ListV2::printList()
         std::cout<<temp<<" :: "<<temp->data<<std::endl;
 
 
-
+    delete temp;
 }
 
