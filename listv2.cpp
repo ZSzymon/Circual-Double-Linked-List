@@ -11,7 +11,7 @@ ListV2::~ListV2()
 {
 
     Node *nextNode;
-
+//////dwaghfjhdrgs
     while(head)
     {
         nextNode = head;
